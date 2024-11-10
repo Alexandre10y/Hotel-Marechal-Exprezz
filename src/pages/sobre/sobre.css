@@ -1,0 +1,158 @@
+.sobre-page {
+  padding: 2rem 0;
+  background: #ffffff;
+}
+
+.intro-section {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.intro-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.intro-image:hover {
+  transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.features-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5em;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #c8b051;
+  font-size: 1.2rem;
+}
+
+.welcome-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.welcome-text em {
+  color: #888;
+  font-style: italic;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.welcome-text p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.welcome-text ul {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo para a seção da equipe */
+.team-section {
+  padding: 3rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.team-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+/* Estilo do Carousel */
+.team-carousel .carousel-indicators {
+  position: static;
+  margin-top: 20px;
+}
+
+.team-carousel .carousel-indicators li {
+  background-color: #c8b051;
+}
+
+.team-carousel .carousel-indicators .active {
+  background-color: #c8b051;
+  opacity: 0.8;
+}
+
+/* Personalização das setas do Carousel */
+.sobre-page .carousel-control-prev-icon,
+.sobre-page .carousel-control-next-icon {
+  background-color: #c5c0c0; /* Altere para a cor desejada */
+  border-radius: 50%;
+}
+
+.sobre-page .carousel-control-prev-icon,
+.sobre-page .carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.sobre-page .carousel-control-prev:hover .carousel-control-prev-icon,
+.sobre-page .carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #e0e0e0; /* Cor de hover das setas */
+}
+
+/* Estilo para cada membro da equipe */
+.team-member {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.team-member h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+
+.team-title {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.team-member blockquote {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  max-width: 300px;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
