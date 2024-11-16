@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Services from './pages/services';
 import Footer from './components/Footer';
 import Sobre from './pages/sobre';
+import Contato from './pages/contato';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/servicos" element={<Services />} />
+        <Route path="/localizacao" element={<Contato />} />
       </Routes>
       <Footer/>
     </Router>

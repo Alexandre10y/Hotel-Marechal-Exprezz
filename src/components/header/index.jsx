@@ -14,7 +14,7 @@ const Header = () => {
             <Nav.Link href="sobre">Sobre</Nav.Link>
             <Nav.Link href="#estrutura">Estrutura</Nav.Link>
             <Nav.Link href="#acomodacoes">Acomodações</Nav.Link>
-            <Nav.Link href="#localizacao">Localização</Nav.Link>
+            <Nav.Link href="localizacao">Localização</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
