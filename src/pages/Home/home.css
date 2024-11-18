@@ -11,7 +11,9 @@
   background-size: cover;
   background-position: center;
 }
-
+.hotel-cor{
+  color: #ffc107;
+}
 .home-page .intro-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;

@@ -23,7 +23,7 @@ const Home = () => {
         >
           <h1>Bem-vindo</h1>
           <p>
-            Descubra uma experiência única de hospedagem no coração de Laranjeiras do Sul. No Hotel Marechal Express, elevamos a arte da hospitalidade a um novo patamar.
+            Descubra uma experiência única de hospedagem no coração de Laranjeiras do Sul. No <span className='hotel-cor'>Hotel Marechal Express</span> , elevamos a arte da hospitalidade a um novo patamar.
           </p>
           <motion.button
             className="saiba-mais-btn"
