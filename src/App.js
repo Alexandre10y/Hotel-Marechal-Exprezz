@@ -11,7 +11,8 @@ import Quartos from './pages/quartos';
 
 const App = () => {
   return (
-    <Router>
+    <>
+      {/* <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +22,21 @@ const App = () => {
         <Route path="/acomodações" element={<Quartos />} />
       </Routes>
       <Footer/>
-    </Router>
+    </Router> */}
+
+      <div style={{
+        textAlign: 'center',
+        marginTop: '50px',
+        padding: '20px',
+        fontFamily: 'Arial, sans-serif'
+      }}>
+        <h1 style={{ fontSize: '2.5rem', color: '#333' }}>🚧 Página em Construção 🚧</h1>
+        <p style={{ fontSize: '1.2rem', color: '#555', marginTop: '20px' }}>
+          Estamos trabalhando para trazer algo incrível para você. <br />
+          Volte em breve para conferir as novidades!
+        </p>
+      </div>
+    </>
   );
 };
 
