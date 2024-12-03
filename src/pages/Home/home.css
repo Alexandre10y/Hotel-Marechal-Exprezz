@@ -85,3 +85,43 @@
     margin: 0 auto;
   }
 }
+
+.card-ap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-ap .colunas{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: flex ;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+  text-align: left;
+}
+
+.container .contato{
+  padding-top: 30px;
+  text-align: center;
+}
+hr{
+  background-color: #333;
+  padding: 1px;
+}
+.list-itens ul {
+  display: flex;
+  justify-content: center;
+}
+
+.list-itens ul li {
+  padding: 0 70px;
+  font-size: 40px;
+}
+.fonts{
+  font-family:'Times New Roman', Times, serif;
+  color: #615226;
+}
