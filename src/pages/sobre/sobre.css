@@ -1,40 +1,16 @@
-.sobre-page {
-  padding: 2rem 0;
-  background: #ffffff;
-}
-
-.intro-section {
-  margin-bottom: 3rem;
-  display: flex;
-  align-items: center;
-}
-
 .intro-image {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
+  border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
   object-fit: cover;
-  transition: transform 0.3s ease;
 }
-
-.intro-image:hover {
-  transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
-}
-
-.features-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.features-list li {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 0.75rem;
-  padding-left: 1.5em;
-  position: relative;
+/* Estilo para cobrir 100% da altura da página */
+.intro-section {
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
+  background-color: #ffffff; 
+  padding: 2rem;
 }
 
 .features-list li::before {
@@ -44,115 +20,59 @@
   color: #c8b051;
   font-size: 1.2rem;
 }
-
-.welcome-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-}
-
-.welcome-text em {
-  color: #888;
-  font-style: italic;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.welcome-text p {
-  color: #555;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-.welcome-text ul {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Estilo para a seção da equipe */
-.team-section {
-  padding: 3rem 0;
-  border-top: 1px solid #ddd;
-}
-
-.team-description {
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 2rem;
+.centered{
   text-align: center;
+  padding: 10px 0px;
 }
 
-/* Estilo do Carousel */
-.team-carousel .carousel-indicators {
-  position: static;
-  margin-top: 20px;
-}
-
-.team-carousel .carousel-indicators li {
+.vai-pra-la hr {
+  padding: 0.5px;
   background-color: #c8b051;
+  color: #c8b051;
+  width: 300px;
+}
+.vai-pra-la {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.tam{
+  hr{
+    width: 500px;
+  }
 }
 
-.team-carousel .carousel-indicators .active {
-  background-color: #c8b051;
-  opacity: 0.8;
+/* Personalizar o ícone da seta para a esquerda */
+.carousel-control-prev-icon {
+  background-color: #c8b051; /* Cor de fundo da seta */
+  background-image: none; /* Remove o ícone padrão */
+  mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M11.354 1.354a.5.5 0 0 1 0 .708L5.207 8.5l6.147 6.146a.5.5 0 0 1-.708.708l-6.5-6.5a.5.5 0 0 1 0-.708l6.5-6.5a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M11.354 1.354a.5.5 0 0 1 0 .708L5.207 8.5l6.147 6.146a.5.5 0 0 1-.708.708l-6.5-6.5a.5.5 0 0 1 0-.708l6.5-6.5a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');
+  background-size: 50%; /* Ajuste do tamanho da seta */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem; /* Tamanho da seta */
+  height: 3rem;
+  border-radius: 50%; /* Deixa o fundo arredondado */
 }
 
-/* Personalização das setas do Carousel */
-.sobre-page .carousel-control-prev-icon,
-.sobre-page .carousel-control-next-icon {
-  background-color: #c5c0c0; /* Altere para a cor desejada */
+/* Personalizar o ícone da seta para a direita */
+.carousel-control-next-icon {
+  background-color: #c8b051; /* Cor de fundo da seta */
+  background-image: none; /* Remove o ícone padrão */
+  mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M4.646 1.354a.5.5 0 0 1 .708 0l6.5 6.5a.5.5 0 0 1 0 .708l-6.5 6.5a.5.5 0 0 1-.708-.708L10.793 8.5 4.646 2.354a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M4.646 1.354a.5.5 0 0 1 .708 0l6.5 6.5a.5.5 0 0 1 0 .708l-6.5 6.5a.5.5 0 0 1-.708-.708L10.793 8.5 4.646 2.354a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
 
-.sobre-page .carousel-control-prev-icon,
-.sobre-page .carousel-control-next-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.sobre-page .carousel-control-prev:hover .carousel-control-prev-icon,
-.sobre-page .carousel-control-next:hover .carousel-control-next-icon {
-  background-color: #e0e0e0; /* Cor de hover das setas */
-}
-
-/* Estilo para cada membro da equipe */
-.team-member {
-  text-align: center;
-  max-width: 400px;
-  margin: auto;
-}
-
-.team-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem;
-  object-fit: cover;
-}
-
-.team-member h5 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 0.2rem;
-}
-
-.team-title {
-  font-size: 1rem;
-  color: #777;
-  margin-bottom: 1rem;
-}
-
-.team-member blockquote {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #555;
-  max-width: 300px;
-  margin: 0 auto;
-  line-height: 1.5;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+/* Adicionar efeito hover */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #e0b01c; /* Cor de fundo ao passar o mouse */
 }

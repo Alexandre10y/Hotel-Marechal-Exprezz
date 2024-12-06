@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Modal, Button } from "react-bootstrap";
+import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import "./quartos.css";
 import ladohotel from "../../assets/image/Home/ladofachada.jpeg";
-
+import { FaWhatsapp } from "react-icons/fa";
 const Quartos = () => {
   const [filter, setFilter] = useState("Todos");
   const [modalShow, setModalShow] = useState(false);
@@ -14,30 +14,46 @@ const Quartos = () => {
       id: 1,
       title: "Casal",
       category: "Casal e Família",
-      image: ladohotel,
+      images: [ladohotel, ladohotel, ladohotel], // Array de imagens do quarto
       description: "Quarto para casal com cama king-size e vista incrível.",
     },
     {
+      id: 5,
+      title: "Duplo Casal",
+      category: "Solteiros",
+      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      description: "Quarto confortável para uma pessoa.",
+    },
+    {
       id: 2,
-      title: "Casal e Família",
+      title: "Casal + Solteiro",
       category: "Casal e Família",
-      image: ladohotel,
+      images: [ladohotel, ladohotel, ladohotel], // Array de imagens do quarto
       description: "Ideal para famílias com duas camas de casal e sala integrada.",
     },
+    
     {
       id: 3,
       title: "Solteiro",
       category: "Solteiros",
-      image: ladohotel,
-      description: "Quarto confortável para uma pessoa com todas as comodidades.",
+      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      description: "Quarto confortável para uma pessoa.",
     },
     {
       id: 4,
       title: "Duplo Solteiro",
       category: "Solteiros",
-      image: ladohotel,
-      description: "Dois quartos de solteiro conectados, ideais para amigos ou família.",
+      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      description: "Quarto confortável para uma pessoa.",
     },
+    {
+      id: 6,
+      title: "Triplo Solteiro",
+      category: "Solteiros",
+      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      description: "Quarto confortável para uma pessoa.",
+    },
+    
   ];
 
   const filteredRooms =
@@ -62,7 +78,10 @@ const Quartos = () => {
   return (
     <div className="quartos-page">
       <Container>
-        <h2 className="text-center mb-4">Nossos Quartos</h2>
+        <div className="pt-4">
+        <h2 className="text-center mb-4">Confira Nossos Quartos</h2>
+        </div>
+          
 
         {/* Filtros */}
         <div className="filters mb-4 text-center">
@@ -90,7 +109,7 @@ const Quartos = () => {
         <Row>
           <AnimatePresence>
             {filteredRooms.map((room) => (
-              <Col md={6} lg={4} key={room.id} className="mb-4">
+              <Col md={6} lg={4} key={room.id} className="mb-4 anima-quarto">
                 <motion.div
                   className="room-card"
                   initial="hidden"
@@ -99,41 +118,61 @@ const Quartos = () => {
                   variants={animationVariants}
                   transition={{ duration: 0.4 }}
                 >
-                  <img
-                    src={room.image}
-                    alt={room.title}
-                    className="room-image"
-                  />
                   <div className="room-overlay" onClick={() => handleOpenModal(room)}>
                     <span className="room-title">{room.title}</span>
                     <span className="room-plus">+</span>
                   </div>
+                  <img
+                    src={room.images[0]} // Exibir a primeira imagem do quarto como miniatura
+                    alt={room.title}
+                    className="room-image"
+                  />
                 </motion.div>
               </Col>
             ))}
           </AnimatePresence>
         </Row>
+
+        <Row>
+          <div className="parent-duvida">
+
+          <div className="duvidas p-2">
+            <h3 className="op">Precisa de Ajuda ?</h3>
+            <p className="mb-2">Entre em contato direo pelo WhatsApp</p>
+            <button className="btn-quartos p-2 mb-3">Reservar Agora <FaWhatsapp className="ajuste-icon"/></button>
+          </div>
+          </div>
+        </Row>
       </Container>
 
-      {/* Modal para detalhes */}
+      
       <Modal show={modalShow} onHide={handleCloseModal} centered>
         <Modal.Header closeButton>
           <Modal.Title>{selectedRoom?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img
-            src={selectedRoom?.image}
-            alt={selectedRoom?.title}
-            className="img-fluid mb-3"
-          />
-          <p>{selectedRoom?.description}</p>
+          {/* Carousel para exibir imagens do quarto */}
+          <Carousel>
+            {selectedRoom?.images.map((image, index) => (
+              <Carousel.Item key={index}>
+                <img
+                  src={image}
+                  alt={`Imagem ${index + 1} do quarto ${selectedRoom.title}`}
+                  className="d-block w-100 rounded modal-image"
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+          <p className="mt-3">{selectedRoom?.description}</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
+          <Button  variant="secondary" onClick={handleCloseModal}>
             Fechar
           </Button>
         </Modal.Footer>
       </Modal>
+
+
     </div>
   );
 };
