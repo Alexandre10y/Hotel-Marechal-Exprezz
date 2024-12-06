@@ -104,24 +104,51 @@ ul li {
   text-align: left;
 }
 
-.container .contato{
+.container .contato {
   padding-top: 30px;
   text-align: center;
 }
-hr{
+
+hr {
   background-color: #333;
   padding: 1px;
 }
+
 .list-itens ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Permite quebrar os ícones em várias linhas */
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
 .list-itens ul li {
-  padding: 0 70px;
-  font-size: 40px;
+  padding: 0 20px; /* Reduz o espaçamento lateral */
+  font-size: 30px; /* Reduz o tamanho do ícone para telas menores */
 }
-.fonts{
-  font-family:'Times New Roman', Times, serif;
+
+.fonts {
+  font-family: 'Times New Roman', Times, serif;
   color: #615226;
 }
+
+@media (max-width: 768px) {
+  .list-itens ul {
+    flex-direction: column; /* Coloca os ícones em uma coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .list-itens ul li {
+    padding: 10px 0; /* Adiciona espaçamento vertical entre os ícones */
+    font-size: 25px; /* Reduz o tamanho do ícone ainda mais em telas menores */
+  }
+
+  .container .contato {
+    padding-top: 20px;
+  }
+
+  .fonts {
+    font-size: 16px; /* Ajusta o tamanho do texto */
+    padding: 0 15px; /* Adiciona um pouco de espaçamento lateral */
+  }
+}
+
