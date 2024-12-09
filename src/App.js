@@ -12,7 +12,7 @@ import Quartos from './pages/quartos';
 const App = () => {
   return (
     <>
-      <Router>
+      {/* <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,9 +22,9 @@ const App = () => {
         <Route path="/acomodações" element={<Quartos />} />
       </Routes>
       <Footer/>
-    </Router>
+    </Router> */}
 
-      {/* <div style={{
+      <div style={{
         textAlign: 'center',
         marginTop: '50px',
         padding: '20px',
@@ -35,7 +35,7 @@ const App = () => {
           Estamos trabalhando para trazer algo incrível para você. <br />
           Volte em breve para conferir as novidades!
         </p>
-      </div> */}
+      </div>
     </>
   );
 };
