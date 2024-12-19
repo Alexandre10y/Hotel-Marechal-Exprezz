@@ -20,7 +20,6 @@ const Quartos = () => {
       title: "Casal",
       category: "Casal e Família",
       images: [c, c, c],
-      description: "Quarto para casal com cama king-size e vista incrível.",
       amenities: " ❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
@@ -28,7 +27,6 @@ const Quartos = () => {
       title: "Duplo Casal",
       category: "Solteiros",
       images: [dc, dc, dc],
-      description: "Quarto confortável para uma pessoa.",
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
@@ -36,7 +34,6 @@ const Quartos = () => {
       title: "Casal + Duplo Solteiro",
       category: "Casal e Família",
       images: [casaleduplos, casaleduplos, casaleduplos],
-      description: "Ideal para famílias com duas camas de casal e sala integrada.",
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
@@ -44,7 +41,6 @@ const Quartos = () => {
       title: "Solteiro",
       category: "Solteiros",
       images: [s, s, s],
-      description: "Quarto confortável para uma pessoa.",
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
@@ -52,7 +48,6 @@ const Quartos = () => {
       title: "Duplo Solteiro",
       category: "Solteiros",
       images: [duplosolteiro, duplosolteiro, duplosolteiro],
-      description: "Quarto confortável para uma pessoa.",
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
@@ -60,7 +55,6 @@ const Quartos = () => {
       title: "Triplo Solteiro",
       category: "Solteiros",
       images: [triplo, triplo, triplo],
-      description: "Quarto confortável para uma pessoa.",
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
   ];
