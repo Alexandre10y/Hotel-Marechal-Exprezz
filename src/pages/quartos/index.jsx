@@ -3,11 +3,11 @@ import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import "./quartos.css";
 import s from "../../assets/image/quartos/solteiro.png";
-import ds from "../../assets/image/quartos/duplo soleiro.png";
+import duplosolteiro from "../../assets/image/quartos/duplo soleiro.png";
 import c from "../../assets/image/quartos/casal.png";
 import dc from "../../assets/image/quartos/duplo casal.png";
 import triplo from "../../assets/image/quartos/triplo.png";
-import casaleduplos from "../../assets/image/quartos/casal + duplo solteiro.png";
+import casaleduplos from "../../assets/image/quartos/casaleduplo.png";
 import { FaWhatsapp } from "react-icons/fa";
 const Quartos = () => {
   const [filter, setFilter] = useState("Todos");
@@ -35,7 +35,7 @@ const Quartos = () => {
       id: 2,
       title: "Casal + Duplo Solteiro",
       category: "Casal e Família",
-      images: [casaleduplos, dc, dc],
+      images: [casaleduplos, casaleduplos, casaleduplos],
       description: "Ideal para famílias com duas camas de casal e sala integrada.",
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
@@ -51,7 +51,7 @@ const Quartos = () => {
       id: 4,
       title: "Duplo Solteiro",
       category: "Solteiros",
-      images: [ds, ds, ds],
+      images: [duplosolteiro, duplosolteiro, duplosolteiro],
       description: "Quarto confortável para uma pessoa.",
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
