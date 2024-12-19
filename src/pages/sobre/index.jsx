@@ -35,7 +35,7 @@
         <Container className="py-5">
           {/* Seção de Introdução */}
           <Row className="align-items-center mb-4 h-100 intro-section" id="intro">
-            <h2 className="mb-3 centered " data-aos="fade-right">Bem-Vindo ao Marechal Exprezz!</h2>
+            <h2 className="mb-3 centered " data-aos="fade-right">Bem-Vindo ao Marechal Express!</h2>
             <Col
               md={6}
               xs={12}
@@ -53,7 +53,7 @@
                 </li>
                 <li className="d-flex align-items-start">
                   <span className="text-warning me-2">✓</span>
-                  Reserve Agora: Garanta sua estadia extraordinária no Marechal Exprezz.
+                  Reserve Agora: Garanta sua estadia extraordinária no Marechal Express.
                 </li>
               </ul>
               <p className="text-muted mt-3">
@@ -68,7 +68,7 @@
             >
               <img
                 src={ladohotel}
-                alt="Hotel Marechal Exprezz"
+                alt="Hotel Marechal Express"
                 className="img-fluid rounded intro-image"
               />
             </Col>
@@ -82,7 +82,7 @@
             </div>
             <h3 className="mb-4">Equipe</h3>
             <p className="text-muted mx-auto mb-4" style={{ maxWidth: '600px' }}>
-              Seja calorosamente recebido na equipe do Hotel Marechal Exprezz, onde a dedicação e o profissionalismo são os pilares que sustentam nosso compromisso com a excelência. Aqui, cada membro desempenha um papel vital na criação de uma experiência única para nossos hóspedes.
+              Seja calorosamente recebido na equipe do Hotel Marechal Express, onde a dedicação e o profissionalismo são os pilares que sustentam nosso compromisso com a excelência. Aqui, cada membro desempenha um papel vital na criação de uma experiência única para nossos hóspedes.
             </p>
             <div className='vai-pra-la tam'>
               <hr className='espaco' />

@@ -10,7 +10,7 @@ const Footer = () => {
       <Container>
         <Row className="justify-content-between">
           <Col md={4} className="footer-section">
-            <h5>Hotel Marechal Exprezz</h5>
+            <h5>Hotel Marechal Express</h5>
             <p>
               Experiência única de hospedagem. <br />
               O conforto e a hospitalidade que você merece.
@@ -28,8 +28,8 @@ const Footer = () => {
             <h5>Contato</h5>
             <p>
             Rua Marechal Cândido Rondon, 2290 Centro, Laranjeiras do Sul, PR <br />
-              <strong>Telefone:</strong> (42) 3635-2939 <br />
-              <strong>Email:</strong> reservas@marechalhotel.com.br
+              <strong>Telefone:</strong> (42) 3635-2720 <br />
+              <strong>Email:</strong> reservashotelmarechal@hotmail.com
             </p>
           </Col>
           <Col md={2} className="footer-section">
@@ -42,7 +42,7 @@ const Footer = () => {
           </Col>
         </Row>
         <div className="footer-bottom text-center mt-4 pad-fut">
-          <p>&copy; {new Date().getFullYear()} Hotel Marechal Exprezz. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Hotel Marechal Express. Todos os direitos reservados.</p>
         </div>
       </Container>
     </footer>

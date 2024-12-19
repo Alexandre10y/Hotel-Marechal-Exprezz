@@ -1,7 +1,7 @@
 // src/components/Header.js
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../../assets/image/Fotos Hotel/Logo/HOTEL MARECHAL COR CHUMBO.png'
+import logo from '../../assets/image/Home/hotelf.png'
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
