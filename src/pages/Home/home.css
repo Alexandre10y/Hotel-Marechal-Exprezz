@@ -5,12 +5,12 @@
   justify-content: center;
   color: white;
   text-align: center;
-  box-shadow: inset 0px 0px 150px rgba(0, 0, 0, 0.7);
   height: 100vh;
-  background-image: url('/src/assets/image/Home/ladofachada.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('/src/assets/image/Home/frentehotel4.png');
   background-size: cover;
   background-position: center;
 }
+
 .hotel-cor{
   color: #ffc107;
 }
@@ -85,7 +85,9 @@
     margin: 0 auto;
   }
 }
-
+a{
+  color: #333;
+}
 .card-ap{
   display: flex;
   justify-content: center;
@@ -151,4 +153,24 @@ hr {
     padding: 0 15px; /* Adiciona um pouco de espaçamento lateral */
   }
 }
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
 
+.card {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img-top::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  opacity: 0.5;
+}

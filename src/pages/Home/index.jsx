@@ -12,6 +12,9 @@ import quartos from '../../assets/image/Fotos Hotel/Frente/hotel google.png';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import s from "../../assets/image/quartos/solteiro.png";
+import c from "../../assets/image/quartos/casal.png";
+import ds from "../../assets/image/quartos/duplo soleiro.png";
 import './home.css';
 
 
@@ -57,7 +60,7 @@ const Home = () => {
               { icon: <FaConciergeBell size={40} />, title: "Equipe Hospitalidade", text: "Nossa equipe calorosa e dedicada está pronta para superar suas expectativas." },
               { icon: <FaBuilding size={40} />, title: "Conferências", text: "Sala de conferência e reuniõe importantes com conforto e atendimento." },
               { icon: <FaClock size={40} />, title: "Atendimento no Ritmo do Seu Tempo", text: "Serviço personalizado que atende às suas necessidades com precisão." },
-              { icon: <FaMapMarkerAlt size={40} />, title: "Localização Privilegiada", text: "Fácil acesso a pontos turísticos e vistas da cidade." }
+              { icon: <FaMapMarkerAlt size={40} />, title: "Localização Privilegiada", text: "Fácil acesso a pontos turísticos, localizado no centro gastronômico da cidade." }
             ].map((service, index) => (
               <Col key={index} xs={12} sm={10} md={6} lg={4} xl={3} className="d-flex align-items-stretch mb-4">
                 <motion.div
@@ -88,7 +91,7 @@ const Home = () => {
           <Row>
             <Col className='colunas' data-aos="zoom-in">
               <Card style={{ width: '18rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', border: 'none' }}>
-                <Card.Img variant="top" src={quartos} />
+                <Card.Img variant="top" src={s} />
                 <Card.Body>
                   <Card.Title>Solteiro</Card.Title>
                   <Card.Text>
@@ -100,13 +103,21 @@ const Home = () => {
                       <li>🚗 Garagem</li>
                     </ul>
                   </Card.Text>
-                  <Button variant="dark">Saiba Mais:</Button>
+                  <a
+                    href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-dark p-2">
+                      Reservar Agora <FaWhatsapp className="ajuste-icon" />
+                    </button>
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
             <Col className='colunas' data-aos="zoom-in">
               <Card style={{ width: '18rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', border: 'none' }}>
-                <Card.Img variant="top" src={quartos} />
+                <Card.Img variant="top" src={c} />
                 <Card.Body>
                   <Card.Title>Casal</Card.Title>
                   <Card.Text>
@@ -118,13 +129,21 @@ const Home = () => {
                       <li>🚗 Garagem</li>
                     </ul>
                   </Card.Text>
-                  <Button variant="dark">Saiba Mais:</Button>
+                  <a
+                    href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-dark p-2">
+                      Reservar Agora <FaWhatsapp className="ajuste-icon" />
+                    </button>
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
             <Col className='colunas' data-aos="zoom-in">
               <Card style={{ width: '18rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', border: 'none' }}>
-                <Card.Img variant="top" src={quartos} />
+                <Card.Img variant="top" src={ds} />
                 <Card.Body>
                   <Card.Title>Duplo Solteiro</Card.Title>
                   <Card.Text>
@@ -136,7 +155,15 @@ const Home = () => {
                       <li>🚗 Garagem</li>
                     </ul>
                   </Card.Text>
-                  <Button variant="dark">Saiba Mais:</Button>
+                  <a
+                    href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-dark p-2">
+                      Reservar Agora <FaWhatsapp className="ajuste-icon" />
+                    </button>
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
@@ -151,9 +178,21 @@ const Home = () => {
         </div>
         <div className='list-itens' data-aos="fade-left">
           <ul>
-            <li><FaWhatsapp /></li>
-            <li><FaInstagram /></li>
-            <li><FaFacebook /></li>
+            <li>
+              <a target='_blank' href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F">
+                <FaWhatsapp />
+              </a>
+            </li>
+            <li>
+              <a target='_blank' href="https://www.instagram.com/hotel_marechal/">
+              <FaInstagram />
+              </a>
+            </li>
+            <li>
+              <a target='_blank' href="https://www.facebook.com/profile.php?id=61568187767069">
+              <FaFacebook />
+              </a>
+            </li>
           </ul>
         </div>
         <div className='contato'>

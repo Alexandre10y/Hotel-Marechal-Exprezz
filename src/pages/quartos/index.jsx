@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import "./quartos.css";
-import ladohotel from "../../assets/image/Home/ladofachada.jpeg";
+import s from "../../assets/image/quartos/solteiro.png";
+import ds from "../../assets/image/quartos/duplo soleiro.png";
+import c from "../../assets/image/quartos/casal.png";
+import dc from "../../assets/image/quartos/duplo casal.png";
+import triplo from "../../assets/image/quartos/triplo.png";
+import casaleduplos from "../../assets/image/quartos/casal + duplo solteiro.png";
 import { FaWhatsapp } from "react-icons/fa";
 const Quartos = () => {
   const [filter, setFilter] = useState("Todos");
@@ -14,46 +19,50 @@ const Quartos = () => {
       id: 1,
       title: "Casal",
       category: "Casal e Família",
-      images: [ladohotel, ladohotel, ladohotel], // Array de imagens do quarto
+      images: [c, c, c],
       description: "Quarto para casal com cama king-size e vista incrível.",
+      amenities: " ❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
       id: 5,
       title: "Duplo Casal",
       category: "Solteiros",
-      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      images: [dc, dc, dc],
       description: "Quarto confortável para uma pessoa.",
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
       id: 2,
-      title: "Casal + Solteiro",
+      title: "Casal + Duplo Solteiro",
       category: "Casal e Família",
-      images: [ladohotel, ladohotel, ladohotel], // Array de imagens do quarto
+      images: [casaleduplos, dc, dc],
       description: "Ideal para famílias com duas camas de casal e sala integrada.",
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
-    
     {
       id: 3,
       title: "Solteiro",
       category: "Solteiros",
-      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      images: [s, s, s],
       description: "Quarto confortável para uma pessoa.",
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
       id: 4,
       title: "Duplo Solteiro",
       category: "Solteiros",
-      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      images: [ds, ds, ds],
       description: "Quarto confortável para uma pessoa.",
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
     {
       id: 6,
       title: "Triplo Solteiro",
       category: "Solteiros",
-      images: [ladohotel, ladohotel, ladohotel], // Array com uma única imagem
+      images: [triplo, triplo, triplo],
       description: "Quarto confortável para uma pessoa.",
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
     },
-    
   ];
 
   const filteredRooms =
@@ -79,9 +88,9 @@ const Quartos = () => {
     <div className="quartos-page">
       <Container>
         <div className="pt-4">
-        <h2 className="text-center mb-4">Confira Nossos Quartos</h2>
+          <h2 className="text-center mb-4">Confira Nossos Quartos</h2>
         </div>
-          
+
 
         {/* Filtros */}
         <div className="filters mb-4 text-center">
@@ -123,7 +132,7 @@ const Quartos = () => {
                     <span className="room-plus">+</span>
                   </div>
                   <img
-                    src={room.images[0]} // Exibir a primeira imagem do quarto como miniatura
+                    src={room.images[0]}
                     alt={room.title}
                     className="room-image"
                   />
@@ -136,43 +145,62 @@ const Quartos = () => {
         <Row>
           <div className="parent-duvida">
 
-          <div className="duvidas p-2">
-            <h3 className="op">Precisa de Ajuda ?</h3>
-            <p className="mb-2">Entre em contato direo pelo WhatsApp</p>
-            <button className="btn-quartos p-2 mb-3">Reservar Agora <FaWhatsapp className="ajuste-icon"/></button>
-          </div>
+            <div className="duvidas p-2">
+              <h3 className="op">Precisa de Ajuda ?</h3>
+              <p className="mb-2">Entre em contato direo pelo WhatsApp</p>
+              <a
+                href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn-quartos p-2 mb-3">
+                  Reservar Agora <FaWhatsapp className="ajuste-icon" />
+                </button>
+              </a>
+            </div>
           </div>
         </Row>
       </Container>
 
-      
+
       <Modal show={modalShow} onHide={handleCloseModal} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedRoom?.title}</Modal.Title>
+        <Modal.Header closeButton className="text-center">
+          <Modal.Title className="w-100">{selectedRoom?.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          {/* Carousel para exibir imagens do quarto */}
-          <Carousel>
-            {selectedRoom?.images.map((image, index) => (
-              <Carousel.Item key={index}>
-                <img
-                  src={image}
-                  alt={`Imagem ${index + 1} do quarto ${selectedRoom.title}`}
-                  className="d-block w-100 rounded modal-image"
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+        <Modal.Body className="text-center">
+          {/* Exibir apenas a imagem selecionada */}
+          {selectedRoom?.images[0] && (
+            <img
+              src={selectedRoom.images[0]}
+              alt={`Imagem do quarto ${selectedRoom.title}`}
+              className="d-block w-100 rounded modal-image"
+            />
+          )}
+          {/* Descrição do quarto */}
           <p className="mt-3">{selectedRoom?.description}</p>
+          {/* Lista de amenities */}
+          <p className="mt-2">
+            <strong>O que este quarto oferece:</strong>
+            <br />
+            {selectedRoom?.amenities}
+          </p>
         </Modal.Body>
-        <Modal.Footer>
-          <Button  variant="secondary" onClick={handleCloseModal}>
+        <Modal.Footer className="text-center">
+          <a
+            href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn btn-success p-2">
+              Reservar Agora <FaWhatsapp className="ajuste-icon" />
+            </button>
+          </a>
+
+          <Button className="btn p-2" variant="secondary" onClick={handleCloseModal}>
             Fechar
           </Button>
         </Modal.Footer>
       </Modal>
-
-
     </div>
   );
 };

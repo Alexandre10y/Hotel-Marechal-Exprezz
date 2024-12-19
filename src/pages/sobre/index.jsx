@@ -90,7 +90,7 @@
 
 
 
-            <Carousel controls={true} indicators={true} className='pt-5 ' data-aos="fade-right">
+            {/* <Carousel controls={true} indicators={true} className='pt-5 ' data-aos="fade-right">
               {teamMembers.map((member, index) => (
                 <Carousel.Item key={index}>
                   <div className="text-center">
@@ -110,7 +110,7 @@
                   </div>
                 </Carousel.Item>
               ))}
-            </Carousel>
+            </Carousel> */}
           </div>
         </Container>
       );

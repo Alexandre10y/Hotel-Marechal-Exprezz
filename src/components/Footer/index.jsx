@@ -20,9 +20,8 @@ const Footer = () => {
             <h5>Links Úteis</h5>
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/about">Sobre</a></li>
-              <li><a href="/services">Serviços</a></li>
-              <li><a href="/contact">Contato</a></li>
+              <li><a href="/sobre">Sobre</a></li>
+              <li><a href="/localizacao">Contato</a></li>
             </ul>
           </Col>
           <Col md={3} className="footer-section">
@@ -36,9 +35,9 @@ const Footer = () => {
           <Col md={2} className="footer-section">
             <h5>Siga-nos</h5>
             <div className="social-links">
-              <a href="https://www.facebook.com/laranjeiraspalacehotel" aria-label="Facebook"><FaFacebook /></a>
-              <a href="https://www.instagram.com/laranjeiraspalacehotel/" aria-label="Instagram"><FaInstagram /></a>
-              <a href="https://wa.me/554236352939" aria-label="Whatsapp"><FaWhatsapp /></a>
+              <a href="https://www.facebook.com/profile.php?id=61568187767069" aria-label="Facebook"><FaFacebook /></a>
+              <a href="https://www.instagram.com/hotel_marechal/" aria-label="Instagram"><FaInstagram /></a>
+              <a href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F" aria-label="Whatsapp"><FaWhatsapp /></a>
             </div>
           </Col>
         </Row>
