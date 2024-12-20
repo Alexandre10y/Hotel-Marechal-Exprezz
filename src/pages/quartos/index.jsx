@@ -141,7 +141,7 @@ const Quartos = () => {
 
             <div className="duvidas p-2">
               <h3 className="op">Precisa de Ajuda ?</h3>
-              <p className="mb-2">Entre em contato direo pelo WhatsApp</p>
+              <p className="mb-2">Entre em contato direto pelo WhatsApp</p>
               <a
                 href="https://wa.me/5542933008907?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
                 target="_blank"
