@@ -12,8 +12,8 @@ import quartos from '../../assets/image/Fotos Hotel/Frente/hotel google.png';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import s from "../../assets/image/quartos/solteiro.png";
-import c from "../../assets/image/quartos/casal.png";
+import s from "../../assets/image/quartos/solteiro.jpeg";
+import c from "../../assets/image/quartos/casal.jpeg";
 import ds from "../../assets/image/quartos/duplo soleiro.png";
 import './home.css';
 
