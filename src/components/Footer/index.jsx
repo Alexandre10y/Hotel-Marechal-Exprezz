@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="social-links">
               <a href="https://www.facebook.com/profile.php?id=61568187767069" aria-label="Facebook"><FaFacebook /></a>
               <a href="https://www.instagram.com/hotel_marechal/" aria-label="Instagram"><FaInstagram /></a>
-              <a href="https://wa.me/5542984022669?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F" aria-label="Whatsapp"><FaWhatsapp /></a>
+              <a href="https://wa.me/5542933008907?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F" aria-label="Whatsapp"><FaWhatsapp /></a>
             </div>
           </Col>
         </Row>
