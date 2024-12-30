@@ -1,61 +1,104 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import "./quartos.css";
-import s from "../../assets/image/quartos/solteiro.jpeg";
+//Quartos Solteiros
+import s from "../../assets/image/quartos/Solteiro/Solteiro Capa.jpeg";
+import solteirolado from "../../assets/image/quartos/Solteiro/Solteiro L.jpeg";
+import solteirofrente from "../../assets/image/quartos/Solteiro/Solterio F.jpeg";
+import fundosolteiro from "../../assets/image/quartos/Solteiro/Fundo.jpeg";
+import banheirosolteiro from "../../assets/image/quartos/Solteiro/Banheiro.jpeg";
+
+//Quartos Duplo Solteiro
 import duplosolteiro from "../../assets/image/quartos/duplo soleiro.png";
-import c from "../../assets/image/quartos/casal.jpeg";
-import dc from "../../assets/image/quartos/duplo casal.png";
-import triplo from "../../assets/image/quartos/triplo.png";
-import casaleduplos from "../../assets/image/quartos/casaleduplo.png";
+import banheiro from "../../assets/image/quartos/DuploSolteiro/banheiro.jpeg";
+import camaaltadp from "../../assets/image/quartos/DuploSolteiro/camaaltadp.jpeg";
+import dpfrente from "../../assets/image/quartos/DuploSolteiro/dpfrente.jpeg";
+import frente2dp from "../../assets/image/quartos/DuploSolteiro/frente2dp.jpeg";
+import ladodp from "../../assets/image/quartos/DuploSolteiro/lado.jpeg";
+
+//Quarto Casal
+import c from "../../assets/image/quartos/Casal/CasalCapa.jpeg";
+import CasalLado from "../../assets/image/quartos/Casal/CasalLado.jpeg";
+import bancada from "../../assets/image/quartos/Casal/bancada.jpeg";
+import casalfundo from "../../assets/image/quartos/Casal/casal fundo.jpeg";
+
+//Quarto Duplo Casal
+import dc from "../../assets/image/quartos/DuploCasal/Frente.jpeg";
+import dclado from "../../assets/image/quartos/DuploCasal/Lado.jpeg";
+import dcpainel from "../../assets/image/quartos/DuploCasal/PainelCama.jpeg";
+import dcpainel2 from "../../assets/image/quartos/DuploCasal/Painel.jpeg";
+import dcbanheiro from "../../assets/image/quartos/DuploCasal/banheiro.jpeg"; 
+
+//Quarto Triplo Solteiro
+import triplocapa from "../../assets/image/quartos/Triplo/Triplo Capa.jpeg";
+import banheirotriplo from "../../assets/image/quartos/Triplo/banheirotriplo.jpeg";
+import triplopainel from "../../assets/image/quartos/Triplo/paineltriplo.jpeg";
+import triplolado from "../../assets/image/quartos/Triplo/triplo.png";
+import triplolado2 from "../../assets/image/quartos/Triplo/triplolado.jpeg";
+
+//Quarto Casal e Duplo Solteiro
+import banheiroCasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/Banheiro.jpeg";
+import frenteCasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/Frente.jpeg";
+import ladoCasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/Lado.jpeg";
+import lado2CasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/Lado2.jpeg";
+import casaleduplos from "../../assets/image/quartos/CasalDuplosSolteiro/casaleduplo.png";
+
 import { FaWhatsapp } from "react-icons/fa";
+
 const Quartos = () => {
   const [filter, setFilter] = useState("Todos");
-  const [modalShow, setModalShow] = useState(false);
-  const [selectedRoom, setSelectedRoom] = useState(null);
+  const navigate = useNavigate();
 
   const rooms = [
     {
       id: 1,
       title: "Casal",
       category: "Casal e Família",
-      images: [c, c, c],
-      amenities: " ❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
+      numeroHospedes: "2",
+      images: [c, CasalLado,casalfundo,bancada, banheiro],
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem, 🛎 atendimento 24 horas.",
     },
     {
       id: 5,
       title: "Duplo Casal",
-      category: "Solteiros",
-      images: [dc, dc, dc],
-      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
+      category: "Casal e Família",
+      numeroHospedes: "4",
+      images: [dc, dcpainel, dclado, dcpainel2,dcbanheiro],
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem, 🛎 atendimento 24 horas.",
     },
     {
       id: 2,
       title: "Casal + Duplo Solteiro",
       category: "Casal e Família",
-      images: [casaleduplos, casaleduplos, casaleduplos],
-      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
+      numeroHospedes: "4",
+      images: [casaleduplos, lado2CasalDuplo , ladoCasalDuplo,frenteCasalDuplo ,banheiroCasalDuplo ],
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem, 🛎 atendimento 24 horas.",
     },
     {
       id: 3,
       title: "Solteiro",
       category: "Solteiros",
-      images: [s, s, s],
-      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
+      numeroHospedes: "1",
+      images: [s, solteirolado, solteirofrente, fundosolteiro,banheirosolteiro,],
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem, 🛎 atendimento 24 horas.",
     },
     {
       id: 4,
       title: "Duplo Solteiro",
       category: "Solteiros",
-      images: [duplosolteiro, duplosolteiro, duplosolteiro],
-      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
+      numeroHospedes: "2",
+      images: [duplosolteiro, dpfrente,frente2dp, camaaltadp,ladodp, banheiro],
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem, 🛎 atendimento 24 horas.",
     },
     {
       id: 6,
       title: "Triplo Solteiro",
       category: "Solteiros",
-      images: [triplo, triplo, triplo],
-      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem e 🛎 atendimento 24 horas.",
+      numeroHospedes: "3",
+      images: [triplocapa,triplolado2 , triplolado,triplopainel,banheirotriplo],
+      amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem, 🛎 atendimento 24 horas.",
     },
   ];
 
@@ -68,14 +111,9 @@ const Quartos = () => {
     exit: { opacity: 0, scale: 0.9 },
   };
 
-  const handleOpenModal = (room) => {
-    setSelectedRoom(room);
-    setModalShow(true);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedRoom(null);
-    setModalShow(false);
+  // Função para redirecionar ao clicar no quarto
+  const handleRoomClick = (room) => {
+    navigate(`/quarto/${room.id}`, { state: { room } });
   };
 
   return (
@@ -84,7 +122,6 @@ const Quartos = () => {
         <div className="pt-4">
           <h2 className="text-center mb-4">Confira Nossos Quartos</h2>
         </div>
-
 
         {/* Filtros */}
         <div className="filters mb-4 text-center">
@@ -120,8 +157,9 @@ const Quartos = () => {
                   exit="exit"
                   variants={animationVariants}
                   transition={{ duration: 0.4 }}
+                  onClick={() => handleRoomClick(room)}
                 >
-                  <div className="room-overlay" onClick={() => handleOpenModal(room)}>
+                  <div className="room-overlay">
                     <span className="room-title">{room.title}</span>
                     <span className="room-plus">+</span>
                   </div>
@@ -138,7 +176,6 @@ const Quartos = () => {
 
         <Row>
           <div className="parent-duvida">
-
             <div className="duvidas p-2">
               <h3 className="op">Precisa de Ajuda ?</h3>
               <p className="mb-2">Entre em contato direto pelo WhatsApp</p>
@@ -155,46 +192,6 @@ const Quartos = () => {
           </div>
         </Row>
       </Container>
-
-
-      <Modal show={modalShow} onHide={handleCloseModal} centered>
-        <Modal.Header closeButton className="text-center">
-          <Modal.Title className="w-100">{selectedRoom?.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="text-center">
-          {/* Exibir apenas a imagem selecionada */}
-          {selectedRoom?.images[0] && (
-            <img
-              src={selectedRoom.images[0]}
-              alt={`Imagem do quarto ${selectedRoom.title}`}
-              className="d-block w-100 rounded modal-image"
-            />
-          )}
-          {/* Descrição do quarto */}
-          <p className="mt-3">{selectedRoom?.description}</p>
-          {/* Lista de amenities */}
-          <p className="mt-2">
-            <strong>O que este quarto oferece:</strong>
-            <br />
-            {selectedRoom?.amenities}
-          </p>
-        </Modal.Body>
-        <Modal.Footer className="text-center">
-          <a
-            href="https://wa.me/5542933008907?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn btn-success p-2">
-              Reservar Agora <FaWhatsapp className="ajuste-icon" />
-            </button>
-          </a>
-
-          <Button className="btn p-2" variant="secondary" onClick={handleCloseModal}>
-            Fechar
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </div>
   );
 };

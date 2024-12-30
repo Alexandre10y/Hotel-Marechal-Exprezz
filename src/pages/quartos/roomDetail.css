@@ -1,0 +1,97 @@
+.room-detail {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Ajuste geral do carrossel */
+.room-detail .carousel img {
+    border-radius: 5px;
+    max-height: 650px;
+    object-fit: cover;
+}
+.hrquarto{
+    height: 0;
+    padding: 0;
+}
+.fundo{
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para o título e informações */
+.room-detail h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.room-detail p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.room-detail ul {
+    padding-left: 20px;
+}
+
+.room-detail ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+a button{
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .room-detail .carousel {
+        margin-bottom: 20px;
+    }
+
+    /* Centraliza o texto abaixo do carrossel */
+    .room-detail .row {
+        flex-direction: column;
+    }
+
+    .room-detail h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .room-detail p {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .room-detail ul {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .room-detail ul li {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .room-detail h2 {
+        font-size: 1.3rem;
+    }
+
+    .room-detail p {
+        font-size: 0.9rem;
+    }
+
+    .room-detail ul li {
+        font-size: 0.85rem;
+    }
+}
+.linkwhats{
+    cursor: pointer;
+    text-decoration: none;
+    color: green; 
+}

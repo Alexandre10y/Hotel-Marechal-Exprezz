@@ -4,8 +4,6 @@ import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './sobre.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import nelci from '../../assets/image/Sobre/nelci.jpg';
-import xande from '../../assets/image/Sobre/xande.jpg';
 import ladohotel from '../../assets/image/Fotos Hotel/Frente/hotel-marechal-frente.png';
 import recepcao from '../../assets/image/Sobre/recpmenor.jpg';
 import sofa from '../../assets/image/Sobre/sobre (1).jpeg';
@@ -13,23 +11,7 @@ import cafe from '../../assets/image/Sobre/sobre (2).jpeg';
 import quarto from '../../assets/image/Sobre/sobre (3).jpeg';
 
 const Sobre = () => {
-  const teamMembers = [
-    {
-      name: "Nelci Da Rosa",
-      title: "CEO & Fundador",
-      image: nelci,
-    },
-    {
-      name: "Alexandre Belloni",
-      title: "Marketing & Suporte",
-      image: xande,
-    },
-    {
-      name: "Maria Oliveira",
-      title: "Coordenadora de Eventos",
-      image: xande,
-    },
-  ];
+  
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true }); // Inicializa o AOS

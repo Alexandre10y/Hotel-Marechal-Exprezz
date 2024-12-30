@@ -7,22 +7,24 @@ import Services from './pages/services';
 import Footer from './components/Footer';
 import Sobre from './pages/sobre';
 import Contato from './pages/contato';
-import Quartos from './pages/quartos';
+import Quartos from './pages/quartos/index.jsx'; // Importa o componente de listagem de quartos
+import RoomDetail from './pages/quartos/RoomDetail.jsx'; // Importa o componente de detalhes
 
 const App = () => {
   return (
     <>
       <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/servicos" element={<Services />} />
-        <Route path="/localizacao" element={<Contato />} />
-        <Route path="/acomodações" element={<Quartos />} />
-      </Routes>
-      <Footer/>
-    </Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/servicos" element={<Services />} />
+          <Route path="/localizacao" element={<Contato />} />
+          <Route path="/acomodações" element={<Quartos />} />
+          <Route path="/quarto/:id" element={<RoomDetail />} />
+        </Routes>
+        <Footer />
+      </Router>
 
       {/* <div style={{
         textAlign: 'center',

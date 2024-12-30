@@ -12,9 +12,9 @@ import quartos from '../../assets/image/Fotos Hotel/Frente/hotel google.png';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import s from "../../assets/image/quartos/solteiro.jpeg";
-import c from "../../assets/image/quartos/casal.jpeg";
-import ds from "../../assets/image/quartos/duplo soleiro.png";
+import s from "../../assets/image/quartos/Solteiro/Solteiro Capa.jpeg";
+import c from "../../assets/image/quartos/Casal/CasalCapa.jpeg";
+import ds from "../../assets/image/quartos/DuploSolteiro/dpfrente.jpeg";
 import './home.css';
 
 
@@ -105,7 +105,7 @@ const Home = () => {
                     </ul>
                   </Card.Text>
                   <a
-                    href="https://wa.me/5542933008907?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+                    href="https://wa.me/5542933008907?text=Olá! Gostaria de efetuar uma reserva."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -131,7 +131,7 @@ const Home = () => {
                     </ul>
                   </Card.Text>
                   <a
-                    href="https://wa.me/5542933008907?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+                    href="https://wa.me/5542933008907?text=Olá! Gostaria de efetuar uma reserva."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -157,7 +157,7 @@ const Home = () => {
                     </ul>
                   </Card.Text>
                   <a
-                    href="https://wa.me/5542933008907?text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20efetuar%20uma%20reserva%20no%20Hotel%20Marechal%20Express.%0APoderia%2C%20por%20favor%2C%20me%20informar%20sobre%20a%20disponibilidade%20e%20os%20procedimentos%20para%20confirmar%20a%20reserva%3F"
+                    href="https://wa.me/5542933008907?text=Olá! Gostaria de efetuar uma reserva."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
