@@ -13,7 +13,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import s from "../../assets/image/quartos/Solteiro/Solteiro Capa.jpeg";
-import c from "../../assets/image/quartos/Casal/CasalCapa.jpeg";
+import c from "../../assets/image/quartos/Casal/casal.png";
 import ds from "../../assets/image/quartos/DuploSolteiro/dpfrente.jpeg";
 import './home.css';
 

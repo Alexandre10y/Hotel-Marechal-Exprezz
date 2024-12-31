@@ -19,7 +19,7 @@ import frente2dp from "../../assets/image/quartos/DuploSolteiro/frente2dp.jpeg";
 import ladodp from "../../assets/image/quartos/DuploSolteiro/lado.jpeg";
 
 //Quarto Casal
-import c from "../../assets/image/quartos/Casal/CasalCapa.jpeg";
+import c from "../../assets/image/quartos/Casal/casal.png";
 import CasalLado from "../../assets/image/quartos/Casal/CasalLado.jpeg";
 import bancada from "../../assets/image/quartos/Casal/bancada.jpeg";
 import casalfundo from "../../assets/image/quartos/Casal/casal fundo.jpeg";
@@ -35,7 +35,6 @@ import dcbanheiro from "../../assets/image/quartos/DuploCasal/banheiro.jpeg";
 import triplocapa from "../../assets/image/quartos/Triplo/Triplo Capa.jpeg";
 import banheirotriplo from "../../assets/image/quartos/Triplo/banheirotriplo.jpeg";
 import triplopainel from "../../assets/image/quartos/Triplo/paineltriplo.jpeg";
-import triplolado from "../../assets/image/quartos/Triplo/triplo.png";
 import triplolado2 from "../../assets/image/quartos/Triplo/triplolado.jpeg";
 
 //Quarto Casal e Duplo Solteiro
@@ -43,7 +42,7 @@ import banheiroCasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/B
 import frenteCasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/Frente.jpeg";
 import ladoCasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/Lado.jpeg";
 import lado2CasalDuplo from "../../assets/image/quartos/CasalDuplosSolteiro/Lado2.jpeg";
-import casaleduplos from "../../assets/image/quartos/CasalDuplosSolteiro/casaleduplo.png";
+import casaleduplos from "../../assets/image/quartos/CasalDuplosSolteiro/casalduplo.png";
 
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -97,7 +96,7 @@ const Quartos = () => {
       title: "Triplo Solteiro",
       category: "Solteiros",
       numeroHospedes: "3",
-      images: [triplocapa,triplolado2 , triplolado,triplopainel,banheirotriplo],
+      images: [triplocapa,triplolado2 ,triplopainel,banheirotriplo],
       amenities: "❄ Ar Condicionado, 📺 Televisão, 📲 Internet, ♨ Café Da Manhã, 🚗 Garagem, 🛎 atendimento 24 horas.",
     },
   ];
